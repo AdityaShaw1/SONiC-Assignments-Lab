@@ -1,0 +1,74 @@
+**Assignment/Lab 1 [SONiC Fundamentals] 21/7/2025
+
+1. Build Environment Setup	 
+
+Set up a SONiC build environment on a Debian-based VM.
+Clone the SONiC GitHub repository and build a minimal SONiC image.
+Document each step with commands used, logs, and screenshots.
+
+2. Install the built SONiC image on a supported virtual platform (e.g., QEMU/KVM, VMs).	
+
+**Assignment/Lab 2 [SONiC CLI and Configuration] 22/7/2025
+
+1. Use SONiC CLI to collect the following:
+	 
+Platform info
+Software version
+Running services
+Interface summary
+
+2. Basic BGP Configuration	
+ 
+Configure BGP on a SONiC device with Local ASN, Peer IP & Network advertisement
+Using vtysh or equivalent CLI, apply and verify config
+
+**Assignment/Lab 3 [How to commit a code in SONiC] 23/7/2025
+
+Fork and clone the SONiC repo; show git remote -v and active branch.
+Create a new branch, make a small code/comment change, and commit using git commit -s.
+Push the branch and create a draft Pull Request with a proper template.
+
+**Assignment/Lab 4 [How to compile and run SAI Server Docker] 24/7/2025
+
+Compile the SAI server Docker using make target/docker-saiserver.mk
+Verify the Docker image is built successfully using docker images
+Run the SAI server container and validate it with docker ps and log outputs
+Document the build and run steps with key commands and observations.
+
+**Assignment/Lab 5 [How to reset syncd Docker] 25/7/2025
+
+Identify the hardware SKU and platform type using SONiC CLI.
+Back up the current /etc/sonic/config_db.json for recovery.
+Run reset-synced-docker command with appropriate -y flag to confirm action.
+Verify that syncd container is stopped and restarted properly using docker ps -a.
+Log and explain what changes occurred in /var/log/syslog or container logs during reset.
+
+**Assignment/Lab 6 [How to write a PTF Test] 28/7/2025
+
+Set up the PTF test environment and clone SONiC test repos.
+Create a basic PTF test script using BaseTest class with setUp, runTest, and tearDown.
+Send a custom Ethernet/IP packet using send_packet() and verify reception with verify_packet().
+Run the test using ptf CLI and capture pass/fail logs.
+
+**Assignment/Lab 7 [How to use SAI Player] 29/7/2025
+
+Install or locate the sai_player tool within your SONiC build or container.
+Obtain or generate a SAI log (recorded SAI API calls) for replay testing.
+Run SAI Player using the SAI log file and observe behavior/output.
+Log any API errors or differences in expected vs. replayed behavior.
+
+**Assignment/Lab 8 [How to deploy SONiC] 30/7/2025
+
+Download or build a SONiC image for your target platform.
+Prepare the device by formatting and flashing the SONiC image using ONIE or PXE.
+Boot into SONiC and validate services, interfaces, and platform info using CLI.
+Configure basic system settings like hostname, interfaces, and default route.
+Document the full deployment steps and initial verification results in a setup log.
+
+**Assignment/Lab 9 [Using swssconfig to apply configuration] 31/7/2025
+
+Create a valid JSON config file (e.g., for interfaces or VLANs) in the swssconfig format.
+Use swssconfig to apply the JSON file into the Redis DB.
+Verify the applied configuration using show commands or Redis CLI.
+Check and document log output from the swss container post configuration.
+
