@@ -1,4 +1,4 @@
-**Assignment/Lab 1 [SONiC Fundamentals] 21/7/2025
+##Assignment/Lab 1 [SONiC Fundamentals] 21/7/2025
 
 1. Build Environment Setup	 
 
@@ -8,7 +8,7 @@ Document each step with commands used, logs, and screenshots.
 
 2. Install the built SONiC image on a supported virtual platform (e.g., QEMU/KVM, VMs).	
 
-**Assignment/Lab 2 [SONiC CLI and Configuration] 22/7/2025
+##Assignment/Lab 2 [SONiC CLI and Configuration] 22/7/2025
 
 1. Use SONiC CLI to collect the following:
 	 
